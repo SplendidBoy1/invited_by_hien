@@ -38,21 +38,26 @@ class App extends React.Component {
     const audio = new Audio("/music.mp3");
     audio.play();
     return (
-        <div className='box_container'>
-          <img src={letter} ></img>
-          <div className='form_data'>
-            <form className='form_submit'>
-              <div className='text_input'>Name</div>
-              <textarea type="text" className='small_text'/>
-              <div className='text_input'>Confirmation</div>
-              <textarea type="text" className='small_text'/>
-              <div className='text_input'>Your message</div>
-              <textarea type="text" className='medium_text'/>
-              <div></div>
-              <input type="submit" className='button_submit'/>
-            </form>
+        <div>
+          <div className='box_container'>
+            <img src={letter} ></img>
+            <div className='form_data'>
+              <form className='form_submit'>
+                <div className='text_input'>Name</div>
+                <textarea type="text" className='small_text'/>
+                <div className='text_input'>Confirmation</div>
+                <textarea type="text" className='small_text'/>
+                <div className='text_input'>Your message</div>
+                <textarea type="text" className='medium_text'/>
+                <div></div>
+                <input type="submit" className='button_submit'/>
+              </form>
+            </div>
+            <div className='location'>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.0563685922393!2d106.79989495690981!3d10.874858822743935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a69462af35%3A0x732e8e6f23fe9fef!2zTMawdSBI4buvdSBQaMaw4bubYywgxJDDtG5nIEjDsmEsIETEqSBBbiwgQsOsbmggRMawxqFuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1764351147695!5m2!1svi!2s" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
           </div>
-          
         </div>
         // <>
         //   <div>

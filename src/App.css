@@ -29,6 +29,14 @@ body{
   width: 45%
 }
 
+.location{
+  position: absolute;
+  top: 84%;
+  left: 2%;
+  border-radius: 20px;
+  width: 45%
+}
+
 .form_submit{
   text-align: start;
   padding: 40px;
