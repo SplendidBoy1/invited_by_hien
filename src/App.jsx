@@ -4,14 +4,39 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import letter from '/graduated_letter.png';
+import music from '/music.mp3';
+
 
 class App extends React.Component {
   constructor(){
     super();
     this.state = { count: 0 };
+    this.audio = new Audio(music);
+    // this.startPlayback = this.startPlayback.bind(this);
+    this.handleFirstInteraction = this.handleFirstInteraction.bind(this);
   }
 
+  componentDidMount() {
+    this.audio.loop = true;
+    this.audio.volume = 0.8;
+
+    // Try autoplay; if blocked, wait for user interaction
+    this.audio.play()
+      .then(() => this.setState({ playing: true }))
+      .catch(() => {
+        document.addEventListener('click', this.handleFirstInteraction, { once: true });
+      });
+  }
+
+
+  handleFirstInteraction() {
+    this.audio.play().then(() => this.setState({ playing: true })).catch(()=>{});
+  }
+
+
   render() {
+    const audio = new Audio("/music.mp3");
+    audio.play();
     return (
         <div className='box_container'>
           <img src={letter} ></img>
