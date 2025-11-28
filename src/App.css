@@ -31,10 +31,19 @@ body{
 
 .location{
   position: absolute;
-  top: 84%;
+  top: 86%;
   left: 2%;
   border-radius: 20px;
   width: 45%
+}
+
+.cloud_1{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 200px;
+  height: auto;
+  opacity: 0.8;
 }
 
 .form_submit{
