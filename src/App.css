@@ -9,7 +9,10 @@ body{
   background-color: #340301;
 }
 
+.letter{
+  width: 100%;
 
+}
 
 /* .Letter{
   background-image: url("/graduated_letter.png");
@@ -138,4 +141,44 @@ body{
 
 .read-the-docs {
   color: #888;
+}
+
+
+@media (max-width: 768px) {
+  .form_data{
+  position: absolute;
+  top:68%;
+  left: 50%;
+  background-color: white;
+  border-radius: 20px;
+  width: 45% 
+  }
+
+  .small_text{
+  font-family: "Lora", serif;
+  font-size: larger;
+  font-family: 'Lor';
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  resize: none;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  }
+
+  .medium_text{
+  font-family: "Lora", serif;
+  font-size: larger;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  resize: none;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  }
+
+
+
 }
