@@ -40,23 +40,7 @@ body{
   width: 45%
 }
 
-.cloud_1{
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 200px;
-  height: auto;
-  opacity: 0.8;
-}
 
-.cloud_2{
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 150px;
-  height: auto;
-  opacity: 0.8;
-}
 
 .form_submit{
   text-align: start;
@@ -157,6 +141,78 @@ textarea{
 }
 
 
+.cloud_1{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 200px;
+  height: auto;
+  opacity: 0.8;
+  animation: float 4s ease-in-out infinite;
+}
+
+.cloud_2{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 150px;
+  height: auto;
+  opacity: 0.8;
+  animation: float 4s ease-in-out infinite;
+}
+
+.cloud_3{
+  position: absolute;
+  top: 3%;
+  right: 17%;
+  width: 150px;
+  height: auto;
+  opacity: 0.8;
+  animation: float 4s ease-in-out infinite;
+}
+
+.cloud {
+  position: absolute;
+  top: 50px;
+  width: 200px;
+  opacity: 0.8;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+/* different speeds for realism */
+.cloud1 {
+  top: 30px;
+  animation-duration: 35s;
+}
+
+.cloud2 {
+  top: 100px;
+  animation-duration: 50s;
+}
+
+.cloud3 {
+  top: 150px;
+  animation-duration: 40s;
+}
+
+/* Animation keyframes */
+/* @keyframes cloudMove {
+  0% {
+    transform: translateX(-250px); 
+  }
+  100% {
+    transform: translateX(100vw);     
+  }
+} */
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
 @media (max-width: 768px) {
   .form_data{
   position: absolute;
@@ -196,6 +252,4 @@ textarea{
   font-family: "Lora", serif;
   font-size: small;
 }
-
-
 }

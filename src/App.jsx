@@ -61,6 +61,7 @@ class App extends React.Component {
             <div>
               <img src={cloud1} className="cloud_1" alt="cloud image" />
               <img src={cloud2} className="cloud_2" alt="cloud image" />
+              <img src={cloud1} className="cloud_3" alt="cloud image" />
             </div>
             
             <div className='location'>
