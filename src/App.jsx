@@ -8,6 +8,8 @@ import Rotate from './Rotate';
 import letter from '/graduated_letter.png';
 import music from '/music.mp3';
 import cloud1 from '/cloud_1.png';
+import cloud2 from '/cloud_2.png';
+
 
 class App extends React.Component {
   constructor(){
@@ -58,6 +60,7 @@ class App extends React.Component {
             </div>
             <div>
               <img src={cloud1} className="cloud_1" alt="cloud image" />
+              <img src={cloud2} className="cloud_2" alt="cloud image" />
             </div>
             
             <div className='location'>

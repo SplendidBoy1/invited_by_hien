@@ -49,6 +49,15 @@ body{
   opacity: 0.8;
 }
 
+.cloud_2{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 150px;
+  height: auto;
+  opacity: 0.8;
+}
+
 .form_submit{
   text-align: start;
   padding: 40px;
@@ -133,6 +142,10 @@ body{
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+textarea{
+  overflow: hidden;
 }
 
 .card {
