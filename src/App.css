@@ -213,7 +213,7 @@ textarea{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .form_data{
   position: absolute;
   top:68%;
